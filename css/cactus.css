@@ -1,0 +1,7 @@
+@charset "utf-8";
+.cactus-centered {
+    text-align: center;
+    position: relative;
+    top: 42vh;
+    z-index: 1;
+}

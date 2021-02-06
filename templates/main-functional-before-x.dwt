@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>akhan.space</title>
+<!-- TemplateEndEditable -->
+<link href="../CSS/Styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/rau6scb.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="../Assets/Favicon.ico" type="image/x-icon" />
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<header>
+    <a class="asadkhan" href="#">Asad Khan</a>
+    <!-- TemplateBeginEditable name="current-page" -->
+    <a class="current-page" href="#top">Chameleon Gallery</a>
+    <!-- TemplateEndEditable -->
+    <div class="nav" onclick="this.classList.toggle('active')">
+        <a href="#" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </a>
+        <div id="navigation">
+            <ul class="nav-menu">
+                <li class="menu-item dropdown-work">
+                    <a href="#">Work</a>
+                </li>
+                <li class="menu-item dropdown-profile">
+                    <a href="#">Profile</a>
+                </li>
+                <li class="menu-item dropdown-contact">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <nav>
+            <div class="vertical">
+                <!-- TemplateBeginEditable name="vertical-menu" -->
+                <a class="vertical-work <!--active-page-->" href="#">Work</a>
+                <a class="vertical-profile <!--active-page-->" href="#"> Profile</a>
+                <a class="vertical-contact <!--active-page--> " href="#">Contact</a>
+                <!-- TemplateEndEditable -->
+            </div>
+        </nav>
+    </div>
+</header>
+<footer>© Asad Khan</footer>
+</body>
+</html>

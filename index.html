@@ -1,0 +1,121 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<style>
+html {
+    background-color: #000
+}
+</style>
+<script src="scripts/gif-preloader.js"></script>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>akhan.space</title>
+<!-- InstanceEndEditable -->
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/rau6scb.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+<!-- InstanceBeginEditable name="head" -->
+<link href="css/cactus.css" rel="stylesheet" type="text/css">
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="loader"></div>
+<div id="content">
+    <!-- InstanceBeginEditable name="page-content" -->
+<video playsinline autoplay muted loop poster="assets/cactus-fountain.jpg" id="bgvid">
+  <source src="assets/cactus-fountain.webm" type="video/webm">
+  <source src="assets/cactus-fountain.mp4" type="video/mp4">
+</video>
+    
+<p class="glitch-effect cactus-centered" id="typing">It works</p>
+
+<script>
+
+document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = ['Welcome. '];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("#typing").innerHTML = text.substring(0, i+1) +'<span id="typing" aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 150);
+    } 
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, infinite);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+
+</script>
+    <!-- InstanceEndEditable -->
+    <header>
+        <a class="asadkhan" href="#">Asad Khan</a>
+        <!-- InstanceBeginEditable name="current-page" -->        <!-- InstanceEndEditable -->
+        <div class="nav" onclick="this.classList.toggle('active')">
+            <a href="#" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </a>
+            <div id="navigation">
+                <ul class="nav-menu">
+                    <!-- InstanceBeginEditable name="dropdown-menu" -->
+                    <li class="menu-item dropdown-work">
+                        <a class="<!--active-page-->" href="#">Work</a>
+                    </li>
+                    <li class="menu-item dropdown-profile">
+                        <a class="<!--active-page-->" href="#">Profile</a>
+                    </li>
+                    <li class="menu-item dropdown-contact">
+                        <a class="<!--active-page-->" href="#">Contact</a>
+                    </li>
+                    <!-- InstanceEndEditable -->
+                </ul>
+            </div>
+        </div>
+        <div>
+            <nav>
+                <div class="vertical">
+                    <!-- InstanceBeginEditable name="vertical-menu" -->
+                    <a class="vertical-work <!--active-page-->" href="#">Work</a>
+                    <a class="vertical-profile <!--active-page-->" href="#"> Profile</a>
+                    <a class="vertical-contact <!--active-page--> " href="#">Contact</a>
+                    <!-- InstanceEndEditable -->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <footer>© Asad Khan</footer>
+</div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>akhan.space</title>
+<link href="CSS/Styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/rau6scb.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="Assets/Favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<video playsinline autoplay muted loop poster="Assets/CactusFountain.jpg" id="bgvid">
+  <source src="Assets/CactusFountain.webm" type="video/webm">
+  <source src="Assets/CactusFountain.mp4" type="video/mp4">
+</video>
+<h1>
+  <nav><a href="index.html">Asad Khan</a></nav>
+</h1>
+<h2>
+  <nav class="vertical">Work Profile Contact</nav>
+  <section>
+    <p class="welcome">Welcome.</p>
+  </section>
+  <script>
+document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "Welcome."];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("p").innerHTML = text.substring(0, i+1) +'<span id="typing" aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    } 
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, infinite);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+</script> 
+</h2>
+<footer>© Asad Khan</footer>
+</body>
+</html>
