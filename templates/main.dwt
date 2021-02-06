@@ -1,17 +1,12 @@
 <!doctype html>
 <html>
 <head>
-<style>
-html {
-    background-color: #000
-}
-</style>
 <script src="../scripts/gif-preloader.js"></script>
 <meta charset="utf-8">
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>akhan.space</title>
 <!-- TemplateEndEditable -->
-<link href="../css/base.css" rel="stylesheet" type="text/css">
+<link href="../css/main.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://use.typekit.net/rau6scb.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
@@ -19,8 +14,8 @@ html {
     <div></div>
 <!-- TemplateEndEditable -->
 </head>
-
 <body>
+<div id="top"></div>
 <div id="loader"></div>
 <div id="content">
     <!-- TemplateBeginEditable name="page-content" -->
@@ -68,4 +63,5 @@ html {
     <footer>© Asad Khan</footer>
 </div>
 </body>
+    <script src="../scripts/smooth-scroll.js"></script>
 </html>

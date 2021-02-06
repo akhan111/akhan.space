@@ -1,6 +1,7 @@
 @charset "utf-8";
 /*GLOBAL / Desktop View*/
 body {
+    background-color: #000;
     color: #ffbbcc;
     font-family: industry, sans-serif;
     font-weight: 500;
@@ -60,7 +61,7 @@ header {
     writing-mode: vertical-lr;
     text-orientation: upright;
     font-size: 1.5rem;
-    letter-spacing: -5px;
+    letter-spacing: -.3rem;
     left: 20px;
     position: fixed;
 }
@@ -160,7 +161,7 @@ text, textarea, input {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: -1;
+    z-index: -10;
     padding-left: 0px;
     padding-top: 0px;
     padding-right: 0px;
@@ -233,8 +234,8 @@ text, textarea, input {
 /*Dropdown Menu*/
 #navigation {
     width: 100vw;
-    text-align: center;
     position: fixed;
+    text-align: center;
     z-index: 9;
 }
 #navigation .nav-menu {
@@ -344,6 +345,7 @@ text, textarea, input {
 #typing {
     border-right: .01rem solid #fbc;
     animation: caret 1s steps(1) infinite;
+    width: 110vw;
 }
 @keyframes caret {
     50% {

@@ -11,26 +11,27 @@ html {
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>akhan.space</title>
 <!-- InstanceEndEditable -->
-<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://use.typekit.net/rau6scb.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 <!-- InstanceBeginEditable name="head" -->
-<link href="css/cactus.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
 <!-- InstanceEndEditable -->
 </head>
-
 <body>
+    <div id="top"></div>
 <div id="loader"></div>
 <div id="content">
     <!-- InstanceBeginEditable name="page-content" -->
-<video playsinline autoplay muted loop poster="assets/cactus-fountain.jpg" id="bgvid">
-  <source src="assets/cactus-fountain.webm" type="video/webm">
+<video playsinline autoplay defaultMuted loop poster="assets/cactus-fountain.jpg" id="bgvid">
+<!--  <source src="assets/cactus-fountain.webm" type="video/webm">-->
   <source src="assets/cactus-fountain.mp4" type="video/mp4">
 </video>
     
 <p class="glitch-effect cactus-centered" id="typing">It works. </p>
     <p class="glitch-effect cactus-centered" id="typing">O yaa? </p>
+
 <script>
 
 document.addEventListener('DOMContentLoaded',function(event){
@@ -68,7 +69,9 @@ document.addEventListener('DOMContentLoaded',function(event){
     <!-- InstanceEndEditable -->
     <header>
         <a class="asadkhan" href="#">Asad Khan</a>
-        <!-- InstanceBeginEditable name="current-page" -->        <!-- InstanceEndEditable -->
+        <!-- InstanceBeginEditable name="current-page" -->     
+        <a class="current-page" href="#top">Current Page</a>
+        <!-- InstanceEndEditable -->
         <div class="nav" onclick="this.classList.toggle('active')">
             <a href="#" class="hamburger">
             <span></span>
@@ -106,4 +109,5 @@ document.addEventListener('DOMContentLoaded',function(event){
     <footer>© Asad Khan</footer>
 </div>
 </body>
+    <script src="scripts/smooth-scroll.js"></script>
 <!-- InstanceEnd --></html>

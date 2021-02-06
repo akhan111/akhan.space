@@ -3,5 +3,7 @@
     text-align: center;
     position: relative;
     top: 42vh;
+    left: -5vw;
     z-index: -1;
+    overflow-y: hidden;
 }
