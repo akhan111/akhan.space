@@ -342,10 +342,8 @@ text, textarea, input {
     background: #000 url("../assets/monkey-head.gif") no-repeat center center;
 }
 /*Typing Text Effect*/
-#typing {
-    border-right: .01rem solid #fbc;
+.typewrite > .wrap {
     animation: caret 1s steps(1) infinite;
-    width: 110vw;
 }
 @keyframes caret {
     50% {

@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://use.typekit.net/rau6scb.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+<script src="scripts/typing-effect.js"> </script>
 <!-- TemplateBeginEditable name="head" -->
     <div></div>
 <!-- TemplateEndEditable -->
@@ -22,12 +23,12 @@
     <div></div>
     <!-- TemplateEndEditable -->
     <header>
-        <a class="asadkhan" href="#">Asad Khan</a>
+        <a class="asadkhan" href="index.html">Asad Khan</a>
         <!-- TemplateBeginEditable name="current-page" -->
         <a class="current-page" href="#top">Current Page</a>
         <!-- TemplateEndEditable -->
         <div class="nav" onclick="this.classList.toggle('active')">
-            <a href="#" class="hamburger">
+            <a  class="hamburger">
             <span></span>
             <span></span>
             <span></span>
@@ -36,13 +37,13 @@
                 <ul class="nav-menu">
                     <!-- TemplateBeginEditable name="dropdown-menu" -->
                     <li class="menu-item dropdown-work">
-                        <a class="<!--active-page-->" href="#">Work</a>
+                        <a class="<!--active-page-->" href="work.html">Work</a>
                     </li>
                     <li class="menu-item dropdown-profile">
-                        <a class="<!--active-page-->" href="#">Profile</a>
+                        <a class="<!--active-page-->" href="profile.html">Profile</a>
                     </li>
                     <li class="menu-item dropdown-contact">
-                        <a class="<!--active-page-->" href="#">Contact</a>
+                        <a class="<!--active-page-->" href="contact.html">Contact</a>
                     </li>
                     <!-- TemplateEndEditable -->
                 </ul>
@@ -52,9 +53,9 @@
             <nav>
                 <div class="vertical">
                     <!-- TemplateBeginEditable name="vertical-menu" -->
-                    <a class="vertical-work <!--active-page-->" href="#">Work</a>
-                    <a class="vertical-profile <!--active-page-->" href="#"> Profile</a>
-                    <a class="vertical-contact <!--active-page--> " href="#">Contact</a>
+                    <a class="vertical-work <!--active-page-->" href="work.html">Work</a>
+                    <a class="vertical-profile <!--active-page-->" href="profile.html"> Profile</a>
+                    <a class="vertical-contact <!--active-page--> " href="contact.html">Contact</a>
                     <!-- TemplateEndEditable -->
                 </div>
             </nav>

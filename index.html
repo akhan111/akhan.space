@@ -1,11 +1,6 @@
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
-<style>
-html {
-    background-color: #000
-}
-</style>
 <script src="scripts/gif-preloader.js"></script>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
@@ -15,65 +10,32 @@ html {
 <link rel="stylesheet" href="https://use.typekit.net/rau6scb.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+<script src="scripts/typing-effect.js"> </script>
 <!-- InstanceBeginEditable name="head" -->
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <!-- InstanceEndEditable -->
 </head>
 <body>
-    <div id="top"></div>
+<div id="top"></div>
 <div id="loader"></div>
 <div id="content">
     <!-- InstanceBeginEditable name="page-content" -->
-<video playsinline autoplay defaultMuted loop poster="assets/cactus-fountain.jpg" id="bgvid">
-<!--  <source src="assets/cactus-fountain.webm" type="video/webm">-->
+<video playsinline autoplay muted loop poster="assets/cactus-fountain.jpg" id="bgvid">
+  <source src="assets/cactus-fountain.webm" type="video/webm">
   <source src="assets/cactus-fountain.mp4" type="video/mp4">
 </video>
     
-<p class="glitch-effect cactus-centered" id="typing">It works. </p>
-    <p class="glitch-effect cactus-centered" id="typing">O yaa? </p>
-
-<script>
-
-document.addEventListener('DOMContentLoaded',function(event){
-  // array with texts to type in typewriter
-  var typingElements = document.querySelectorAll("[id=typing]");
-  var dataText = [];
-  for(var i = 0; i < typingElements.length; i++) {
-    dataText.push(typingElements[i].innerHTML);
-  }
-
-  // type one text in the typwriter
-  // keeps calling itself until the text is finished
-  function typeWriter(i) {
-    // chekc if text isn't finished yet
-      var textLeft = false;
-      for (var j = 0; j < dataText.length; j++) {
-        if (i < dataText[j].length) {
-          textLeft = true;
-          // add next character to h1
-          typingElements[j].innerHTML = dataText[j].substring(0, i+1) +'<span id="typing" aria-hidden="true"></span>';
-
-          // wait for a while and call this function again for next character
-        } 
-      }
-      if (textLeft) {
-        setTimeout(function() {
-            typeWriter(i + 1);
-          }, 150);
-      }
-  }
-  // start a typewriter animation for a text in the dataText array
-  typeWriter(0);
-});
-</script>
+  <p class="typewrite glitch-effect cactus-centered" data-period="99999" data-type='["Welcome. "]'>
+    <span class="wrap"></span>
+  </p>
     <!-- InstanceEndEditable -->
     <header>
-        <a class="asadkhan" href="#">Asad Khan</a>
+        <a class="asadkhan" href="index.html">Asad Khan</a>
         <!-- InstanceBeginEditable name="current-page" -->     
         <a class="current-page" href="#top">Current Page</a>
         <!-- InstanceEndEditable -->
         <div class="nav" onclick="this.classList.toggle('active')">
-            <a href="#" class="hamburger">
+            <a  class="hamburger">
             <span></span>
             <span></span>
             <span></span>
