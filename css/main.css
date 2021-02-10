@@ -127,8 +127,11 @@ footer {
 html, body, span {
     cursor: url("../assets/cursors/banana.cur"), url("../assets/cursors/banana.png"), auto !important;
 }
-a, button, button:hover, audio:hover, menu-toggle:active, hamburger, cross, pointer {
+a, button, button:hover, audio:hover {
     cursor: url("../assets/cursors/banana-peeled.cur"), url("../assets/cursors/banana-peeled.png"), auto !important;
+}
+*:active {
+    cursor: url("../assets/cursors/banana-splat.cur"), url("../assets/cursors/banana-splat.png"), auto !important;
 }
 map, canvas:hover {
     cursor: url("../assets/cursors/grab.cur"), url("../assets/cursors/grab.png"), auto !important;
