@@ -12,51 +12,53 @@
 <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
 <script src="scripts/typing-effect.js"> </script>
 <!-- TemplateBeginEditable name="head" -->
-    <div></div>
+<div></div>
 <!-- TemplateEndEditable -->
 </head>
 <body>
 <div id="top"></div>
 <div id="loader"></div>
-        <header>
-        <a class="asadkhan" href="index.html">Asad Khan</a>
-        <!-- TemplateBeginEditable name="current-page" -->
-        <a class="current-page" href="#top">Current Page</a>
-        <!-- TemplateEndEditable -->
-        <div class="nav" onclick="this.classList.toggle('active')">
-            <a  class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-            </a>
-            <div id="navigation">
-                <ul class="nav-menu">
-                    <!-- TemplateBeginEditable name="dropdown-menu" -->
-                    <li class="menu-item dropdown-work">
-                        <a class="<!--active-page-->" href="work.html">Work</a>
-                    </li>
-                    <li class="menu-item dropdown-profile">
-                        <a class="<!--active-page-->" href="profile.html">Profile</a>
-                    </li>
-                    <li class="menu-item dropdown-contact">
-                        <a class="<!--active-page-->" href="contact.html">Contact</a>
-                    </li>
-                    <!-- TemplateEndEditable -->
-                </ul>
+<header>
+<!--    <div id="nav-menu-container">-->
+    <a class="asadkhan" href="index.html">Asad Khan</a>
+    <!-- TemplateBeginEditable name="current-page" -->
+    <a class="current-page" href="#top">Current Page</a>
+    <!-- TemplateEndEditable -->
+    <div class="nav" onclick="this.classList.toggle('active')">
+        <a  class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </a>
+        <div id="navigation">
+            <ul class="nav-menu">
+                <!-- TemplateBeginEditable name="dropdown-menu" -->
+                <li class="menu-item dropdown-work">
+                    <a class="<!--active-page-->" href="work.html">Work</a>
+                </li>
+                <li class="menu-item dropdown-profile">
+                    <a class="<!--active-page-->" href="profile.html">Profile</a>
+                </li>
+                <li class="menu-item dropdown-contact">
+                    <a class="<!--active-page-->" href="contact.html">Contact</a>
+                </li>
+                <!-- TemplateEndEditable -->
+            </ul>
+        </div>
+    </div>
+<!--    </div>-->
+    <div>
+        <nav>
+            <div class="vertical">
+                <!-- TemplateBeginEditable name="vertical-menu" -->
+                <a class="vertical-work <!--active-page-->" href="work.html">Work</a>
+                <a class="vertical-profile <!--active-page-->" href="profile.html"> Profile</a>
+                <a class="vertical-contact <!--active-page--> " href="contact.html">Contact</a>
+                <!-- TemplateEndEditable -->
             </div>
-        </div>
-        <div>
-            <nav>
-                <div class="vertical">
-                    <!-- TemplateBeginEditable name="vertical-menu" -->
-                    <a class="vertical-work <!--active-page-->" href="work.html">Work</a>
-                    <a class="vertical-profile <!--active-page-->" href="profile.html"> Profile</a>
-                    <a class="vertical-contact <!--active-page--> " href="contact.html">Contact</a>
-                    <!-- TemplateEndEditable -->
-                </div>
-            </nav>
-        </div>
-    </header>
+        </nav>
+    </div>
+</header>
 <div id="content">
     <!-- TemplateBeginEditable name="page-content" -->
     <div></div>
@@ -64,7 +66,7 @@
     <footer>© Asad Khan</footer>
 </div>
 </body>
-    <script src="../scripts/smooth-scroll.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
-    <script src="scripts/draggable-using-jquery-ui.js"></script>
+<script src="../scripts/smooth-scroll.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="scripts/draggable-using-jquery-ui.js"></script>
 </html>

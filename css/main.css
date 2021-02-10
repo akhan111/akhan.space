@@ -151,11 +151,11 @@ text, textarea, input {
   *:focus { outline:none !important }
 /*Custom Text Highlight*/
 ::-moz-selection {
-    background-color: #aee;
+    background-color: rgba(170,238,238,0.50);
     color: #FFEEBB;
 }
 ::selection {
-    background-color: #aee;
+    background-color: rgba(170,238,238,0.50);
     color: #FFEEBB;
 }
 /*Custom Scrollbar*/ ::-webkit-scrollbar {
@@ -173,6 +173,7 @@ text, textarea, input {
     height: 100vh;
     position: fixed;
     z-index: -10;
+    top: 0px;
     padding-left: 0px;
     padding-top: 0px;
     padding-right: 0px;
@@ -244,11 +245,11 @@ text, textarea, input {
 }
 /*Dropdown Menu*/
 #navigation {
-    width: 100vw;
     position: fixed;
     text-align: center;
     z-index: 9;
 }
+
 #navigation .nav-menu {
     width: 50%;
     list-style: none;
@@ -291,7 +292,7 @@ text, textarea, input {
     top: 0px;
 }
 #navigation .nav-menu .menu-item a {
-    height: 100vh;
+    height: 100%;
     text-decoration: none;
     color: #fbc;
     text-transform: uppercase;
