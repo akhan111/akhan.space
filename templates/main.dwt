@@ -18,11 +18,7 @@
 <body>
 <div id="top"></div>
 <div id="loader"></div>
-<div id="content">
-    <!-- TemplateBeginEditable name="page-content" -->
-    <div></div>
-    <!-- TemplateEndEditable -->
-    <header>
+        <header>
         <a class="asadkhan" href="index.html">Asad Khan</a>
         <!-- TemplateBeginEditable name="current-page" -->
         <a class="current-page" href="#top">Current Page</a>
@@ -61,8 +57,14 @@
             </nav>
         </div>
     </header>
+<div id="content">
+    <!-- TemplateBeginEditable name="page-content" -->
+    <div></div>
+    <!-- TemplateEndEditable -->
     <footer>© Asad Khan</footer>
 </div>
 </body>
     <script src="../scripts/smooth-scroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+    <script src="scripts/draggable-using-jquery-ui.js"></script>
 </html>
