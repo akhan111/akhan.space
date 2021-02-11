@@ -247,54 +247,54 @@ text, textarea, input {
     }
 }
 /*Dropdown Menu*/
-#navigation {
+#dropdown {
     position: fixed;
     text-align: center;
     z-index: 9;
 }
 
-#navigation .nav-menu {
+#dropdown .nav-menu {
     width: 50%;
     list-style: none;
 }
-#navigation .nav-menu li:nth-child(n+1) {
+#dropdown .nav-menu li:nth-child(n+1) {
     background: #000;
 }
-#navigation .nav-menu li:nth-child(6n-1) {
+#dropdown .nav-menu li:nth-child(6n-1) {
     transition: transform 0.2s ease-in-out 0s;
 }
-#navigation .nav-menu li:nth-child(n+2) {
+#dropdown .nav-menu li:nth-child(n+2) {
     background: #000;
 }
-#navigation .nav-menu li:nth-child(6n-2) {
+#dropdown .nav-menu li:nth-child(6n-2) {
     transition: transform 0.2s ease-in-out .3s;
 }
-#navigation .nav-menu li:nth-child(n+3) {
+#dropdown .nav-menu li:nth-child(n+3) {
     background: #000;
 }
-#navigation .nav-menu li:nth-child(6n-3) {
+#dropdown .nav-menu li:nth-child(6n-3) {
     transition: transform .2s ease-in-out 0s;
 }
-#navigation .nav-menu li:nth-child(n+4) {
+#dropdown .nav-menu li:nth-child(n+4) {
     background: #000;
 }
-#navigation .nav-menu li:nth-child(6n-4) {
+#dropdown .nav-menu li:nth-child(6n-4) {
     transition: transform 0.2s ease-in-out .3s;
 }
-#navigation .nav-menu li:nth-child(n+5) {
+#dropdown .nav-menu li:nth-child(n+5) {
     background: #000;
 }
-#navigation .nav-menu li:nth-child(6n-5) {
+#dropdown .nav-menu li:nth-child(6n-5) {
     transition: transform 0.2s ease-in-out .6s;
 }
-#navigation .nav-menu .menu-item {
+#dropdown .nav-menu .menu-item {
     display: block;
     width: 33.5%;
     position: fixed;
     transform: translateY(-100%);
     top: 0px;
 }
-#navigation .nav-menu .menu-item a {
+#dropdown .nav-menu .menu-item a {
     height: 100%;
     text-decoration: none;
     color: #fbc;
@@ -307,11 +307,11 @@ text, textarea, input {
     text-align: center;
     left: 0px;
 }
-#navigation .nav-menu .menu-item a:hover {
+#dropdown .nav-menu .menu-item a:hover {
     color: #aee;
     transition: 1s;
 }
-#navigation .nav-menu .menu-item a:active {
+#dropdown .nav-menu .menu-item a:active {
     color: #feb;
     transition: 0s;
 }
@@ -348,7 +348,7 @@ text, textarea, input {
     right: 0px;
 }
 @media (max-height:175px) {
-    #navigation {
+    #dropdown {
         display: none;
     }
 }

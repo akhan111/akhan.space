@@ -19,7 +19,6 @@
 <div id="top"></div>
 <div id="loader"></div>
 <header>
-<!--    <div id="nav-menu-container">-->
     <a class="asadkhan" href="index.html">Asad Khan</a>
     <!-- TemplateBeginEditable name="current-page" -->
     <a class="current-page" href="#top">Current Page</a>
@@ -30,7 +29,7 @@
         <span></span>
         <span></span>
         </a>
-        <div id="navigation">
+        <div id="dropdown">
             <ul class="nav-menu">
                 <!-- TemplateBeginEditable name="dropdown-menu" -->
                 <li class="menu-item dropdown-work">
@@ -46,25 +45,19 @@
             </ul>
         </div>
     </div>
-<!--    </div>-->
-    <div>
-        <nav>
-            <div class="vertical">
-                <!-- TemplateBeginEditable name="vertical-menu" -->
-                <a class="vertical-work <!--active-page-->" href="work.html">Work</a>
-                <a class="vertical-profile <!--active-page-->" href="profile.html"> Profile</a>
-                <a class="vertical-contact <!--active-page--> " href="contact.html">Contact</a>
-                <!-- TemplateEndEditable -->
-            </div>
-        </nav>
+    <div class="vertical">
+        <!-- TemplateBeginEditable name="vertical-menu" -->
+        <a class="vertical-work <!--active-page-->" href="work.html">Work</a>
+        <a class="vertical-profile <!--active-page-->" href="profile.html"> Profile</a>
+        <a class="vertical-contact <!--active-page--> " href="contact.html">Contact</a>
+        <!-- TemplateEndEditable -->
     </div>
 </header>
+<!-- TemplateBeginEditable name="page-content" -->
 <div id="content">
-    <!-- TemplateBeginEditable name="page-content" -->
-    <div></div>
-    <!-- TemplateEndEditable -->
-    <footer>© Asad Khan</footer>
 </div>
+<!-- TemplateEndEditable -->
+<footer>© Asad Khan</footer>
 </body>
 <script src="../scripts/smooth-scroll.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
