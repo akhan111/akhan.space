@@ -179,6 +179,9 @@ text, textarea, input {
     padding-right: 0px;
     padding-bottom: 0px;
 }
+
+
+
 /*Hamburger Menu and Hover Effect*/
 .hamburger {
     position: fixed;
@@ -258,31 +261,31 @@ text, textarea, input {
     background: #000;
 }
 #navigation .nav-menu li:nth-child(6n-1) {
-    transition: transform 0.3s ease-in-out 0s;
+    transition: transform 0.2s ease-in-out 0s;
 }
 #navigation .nav-menu li:nth-child(n+2) {
     background: #000;
 }
 #navigation .nav-menu li:nth-child(6n-2) {
-    transition: transform 0.3s ease-in-out 0.2s;
+    transition: transform 0.2s ease-in-out .3s;
 }
 #navigation .nav-menu li:nth-child(n+3) {
     background: #000;
 }
 #navigation .nav-menu li:nth-child(6n-3) {
-    transition: transform 0.3s ease-in-out 0.4s;
+    transition: transform .2s ease-in-out 0s;
 }
 #navigation .nav-menu li:nth-child(n+4) {
     background: #000;
 }
 #navigation .nav-menu li:nth-child(6n-4) {
-    transition: transform 0.3s ease-in-out 0.6s;
+    transition: transform 0.2s ease-in-out .3s;
 }
 #navigation .nav-menu li:nth-child(n+5) {
     background: #000;
 }
 #navigation .nav-menu li:nth-child(6n-5) {
-    transition: transform 0.3s ease-in-out 0.8s;
+    transition: transform 0.2s ease-in-out .6s;
 }
 #navigation .nav-menu .menu-item {
     display: block;
@@ -314,23 +317,23 @@ text, textarea, input {
 }
 .active .nav-menu li:nth-child(n+1) {
     transform: translateY(0) !important;
-    transition: transform 0.3s ease-in-out 0.0s !important;
+    transition: transform 0.2s ease-in-out 0.0s !important;
 }
 .active .nav-menu li:nth-child(n+2) {
     transform: translateY(0) !important;
-    transition: transform 0.3s ease-in-out 0.2s !important;
+    transition: transform 0.2s ease-in-out 0.3s !important;
 }
 .active .nav-menu li:nth-child(n+3) {
     transform: translateY(0) !important;
-    transition: transform 0.3s ease-in-out 0.4s !important;
+    transition: transform 0.2s ease-in-out 0.6s !important;
 }
 .active .nav-menu li:nth-child(n+4) {
     transform: translateY(0) !important;
-    transition: transform 0.3s ease-in-out 0.6s !important;
+    transition: transform 0.2s ease-in-out .9s !important;
 }
 .active .nav-menu li:nth-child(n+5) {
     transform: translateY(0) !important;
-    transition: transform 0.3s ease-in-out .8s !important;
+    transition: transform 0.2s ease-in-out 1.2s !important;
 }
 .dropdown-work {
     position: fixed;
@@ -343,6 +346,11 @@ text, textarea, input {
 .dropdown-contact {
     position: fixed;
     right: 0px;
+}
+@media (max-height:175px) {
+    #navigation {
+        display: none;
+    }
 }
 /*Preloader*/
 #loader {
