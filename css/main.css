@@ -166,8 +166,8 @@ text, textarea, input {
 ::-webkit-scrollbar-thumb {
     background: #000;
 }
-/*Background Video*/
-#bgvid {
+/*Background Video / Image*/
+#full-cover-bg {
     object-fit: cover;
     width: 100vw;
     height: 100vh;

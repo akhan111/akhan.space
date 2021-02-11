@@ -2,22 +2,24 @@
 $(function () {
 	$("a").draggable({
 		revert: "invalid",
+//		helper: "clone",
+		opacity: 0.35,
 		});
 });
 
 $(function () {
 	$("img").draggable({
 		revert: "invalid",
+//		helper: "clone",
+		opacity: 0.35,
 		});
 });
 
-// $(function () {
-// 	$("body").draggable({
-// 		revert: "invalid",
-// 		});
-// });
+
 $(function () {
 	$(".pinterest-feed-container").draggable({
 		revert: "invalid",
+//		helper: "clone",
+		opacity: 0.35,
 		});
 });
