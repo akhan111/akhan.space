@@ -5,4 +5,5 @@
     top: 42vh;
     z-index: -1;
     overflow-y: hidden;
+    white-space: pre;
 }

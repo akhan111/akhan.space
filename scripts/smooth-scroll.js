@@ -1,10 +1,9 @@
 
 $("a").click(function(e) {
-	e.preventDefault();
-	
-	var position = $($(this).attr("href")).offset().top - 50;
+
+	var position = $($(this).attr("href")).offset().top - 70;
 
 	$("body, html").animate({
 		scrollTop: position
-	}, 400 /* speed */ );
+	}, 600 /* speed */ );
 });

@@ -4,6 +4,7 @@ $(function () {
 		revert: "invalid",
 //		helper: "clone",
 		opacity: 0.35,
+		refreshPositions: true,
 		});
 });
 
@@ -12,6 +13,7 @@ $(function () {
 		revert: "invalid",
 //		helper: "clone",
 		opacity: 0.35,
+		refreshPositions: true,
 		});
 });
 
@@ -21,5 +23,6 @@ $(function () {
 		revert: "invalid",
 //		helper: "clone",
 		opacity: 0.35,
+		refreshPositions: true,
 		});
 });
