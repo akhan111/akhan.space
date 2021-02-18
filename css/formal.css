@@ -98,7 +98,7 @@ img:hover + .formal-container-text {
     line-height: 0px !important;
     top: 100px;
     height: calc(100vh - 100px);
-    width: 50px;
+    width: 100px;
     opacity: 0;
     transition: 1s;
     color: #7f7f7f;
@@ -125,5 +125,6 @@ img:hover + .formal-container-text {
 @media (max-width:600px) {
     #timeline {
         font-size: .8rem;
+        width: 50px;
     }
 }

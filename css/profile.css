@@ -1,0 +1,140 @@
+@charset "utf-8";
+#content {
+    max-width: 1080px;
+    width: 80vw;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    text-align: justify;
+}
+p {
+    text-indent: 2rem;
+}
+#bio-formal {
+    display: block;
+    color: #7f7f7f;
+    font-family: t26-carbon, monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    font-size: 1.3rem;
+    letter-spacing: normal;
+    text-indent: 2rem;
+}
+#bio-informal {
+    display: none;
+    color: #7f7f7f;
+    font-family: t26-carbon, monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    font-size: 1.3rem;
+    letter-spacing: normal;
+    text-indent: 2rem;
+}
+#map-footer {
+    background-color: #000;
+    width: 100%;
+    height: 65px;
+    margin-top: -65px;
+    position: absolute;
+}
+/* Toggle */
+input {
+    -webkit-appearance: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 34px;
+    background-image: url("/assets/profile/handshake.png");
+    background-color: #7f7f7f;
+    background-size: 34px;
+    outline: none;
+    transition: background-image .2s;
+    border-radius: 0px;
+}
+input:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 34px;
+    width: 34px;
+    transition: all .2s;
+    background-color: #fbc;
+    border-radius: 0px;
+}
+input:checked {
+    background-image: url("/assets/profile/cheers.png");
+    background-color: #7f7f7f;
+    transition: background-image .2s;
+    border-radius: 0px;
+}
+input:checked:before {
+    transform: translate(100%);
+    transition: all .2s;
+    border-radius: 0px;
+}
+/*Pinterest Widget*/
+.pin-widget {
+    margin-top: 80px;
+    width: 100%;
+}
+.pinterest-feed-container {
+    font-size: 0px;
+    /* margin:10px;  */
+    height: 300px;
+    overflow: auto;
+    padding: 5px;
+    border-top: 3px solid #fbc;
+    border-bottom: 3px solid #fbc;
+    /*   border-left:3px solid #fbc; */
+}
+.pinterest-feed-container::-webkit-scrollbar {
+    display: none;
+}
+.pinterest-feed-pin {
+    width: 20%;
+}
+.pinterest-feed-pin a {
+    display: block;
+    padding: 5px;
+    overflow: hidden;
+}
+.pinterest-feed-pin a img {
+    /*   transition: 1s; */
+    border: 1px solid #fbc;
+    overflow: hidden;
+}
+.pinterest-feed-pin a img:hover {
+    /*   transform:scale(1.5); */
+    /*   opacity:0.6; */
+    border: 3px solid #aee;
+    margin: -2px;
+    border-radius: 0px 1.5vw;
+}
+.pinterest-link a {
+    display: block;
+    /* text-decoration:none; */
+    background-color: #fbc;
+    padding: 10px;
+    border-radius: 0px 1.5vw;
+    /* color:#000; */
+    margin-top: 10px;
+    text-align: center;
+    color: #000;
+    font-family: t26-carbon, monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    font-size: 16pt;
+    letter-spacing: normal;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}

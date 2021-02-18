@@ -1,0 +1,126 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<script src="scripts/gif-preloader.js"></script>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Profile</title>
+<link href="css/profile.css" rel="stylesheet" type="text/css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel='stylesheet' />
+<!-- InstanceEndEditable -->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/rau6scb.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<!-- InstanceBeginEditable name="head" -->
+<div></div>
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<div id="top"></div>
+<div id="loader"></div>
+<header>
+    <a class="asadkhan" href="/index.html">Asad Khan</a>
+    <!-- InstanceBeginEditable name="current-page" -->
+    <a class="current-page" href="#top">Profile</a>
+    <!-- InstanceEndEditable -->
+    <div class="nav" onclick="this.classList.toggle('active')">
+        <a  class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </a>
+        <div id="dropdown">
+            <ul class="nav-menu">
+                <!-- InstanceBeginEditable name="dropdown-menu" -->
+                <li class="menu-item dropdown-work">
+                    <a class="<!--active-page-->" href="work.html">Work</a>
+                </li>
+                <li class="menu-item dropdown-profile">
+                    <a class="active-page" href="profile.html">Profile</a>
+                </li>
+                <li class="menu-item dropdown-contact">
+                    <a class="<!--active-page-->" href="contact.html">Contact</a>
+                </li>
+                <!-- InstanceEndEditable -->
+            </ul>
+        </div>
+    </div>
+    <div class="vertical">
+        <!-- InstanceBeginEditable name="vertical-menu" -->
+        <a class="vertical-work <!--active-page-->" href="work.html">Work</a>
+        <a class="vertical-profile active-page" href="profile.html"> Profile</a>
+        <a class="vertical-contact <!--active-page--> " href="contact.html">Contact</a>
+        <!-- InstanceEndEditable -->
+    </div>
+</header>
+<!-- InstanceBeginEditable name="page-content" -->
+<div id="content">
+    <div id="map" style="width: 100%; height: 200px; z-index: 0;"></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWtoYW5zcGFjZSIsImEiOiJjamJlcDkyNzAweHJ1Mnlxd2lrbjJ5a3EyIn0.3Qa090Nqxb0zvbdDf56Vtg';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/akhanspace/cjbeq0r0x9aar2rojqfs555wn',
+    center: [-95.460460, 29],
+zoom: 4.5,
+});
+</script>
+
+    <div id="map-footer"></div>
+    <input id="professionalism-toggle" type="checkbox" onclick="rep()"> 
+
+    <script>
+
+    function rep() {
+        var x = document.getElementById("bio-formal");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+        var x = document.getElementById("bio-informal");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <div id="bio-formal">
+    <p>Asad Khan is a designer that focuses on bridging the gap between humans and other animals. His work generally takes the form of conceptual zoo exhibit designs, but he occasionally works as a fine artist as well. No matter the media, his work consistently seeks to challenge power roles and to allow space for contemplation on the role of the human animal in the Anthropocene.</p>
+
+<p>Asad is from Houston and attends the Parsons New School of Design in New York City as an undergraduate. He is working towards a dual degree: a BFA in Integrated Design with an emphasis on Zoo Design and a BA in Liberal Arts with an emphasis on Anthropogeny. He plans to earn a Master of Architecture and a Master of Landscape Architecture in the future.</p>
+
+<p>Zoo Design has been Asad's passion since a very young age, as it has always presented a unique blend of his steady interests in biology, design, and business. He seeks to break away from the paradigms present in the field and to present new experiences that draw from other disciplines.</p>
+    </div>
+    <div id="bio-informal">
+        <p>I am a designer that focuses on bridging the gap between humans and other animals. My work generally takes the form of conceptual zoo exhibit designs, but I occasionally work as a fine artist as well. No matter the media, my work consistently seeks to challenge power roles and to allow space for contemplation on the role of the human animal in the Anthropocene.</p>
+
+        <p>I am from Houston and attend the Parsons New School of Design in New York City as an undergraduate. I am working towards a dual degree: a BFA in Integrated Design with an emphasis on Zoo Design and a BA in Liberal Arts with an emphasis on Anthropogeny. I plan to earn a Master of Architecture and a Master of Landscape Architecture in the future.</p>
+        
+        <p>Zoo Design has been my passion since a very young age, as it has always presented a unique blend of my steady interests in biology, design, and business. I seek to break away from the paradigms present in the field and to present new experiences that draw from other disciplines.</p>
+            </div>
+    <div class="pin-widget">
+  <div class="pinterest-feed-container">
+    <div class="pinterest-feed wait">
+    </div>
+  </div>
+  <a class="pinterest-link">
+  </a>
+</div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="scripts/pinterest-widget.js"> </script>
+<!-- InstanceEndEditable -->
+<footer>© Asad Khan</footer>
+</body>
+<script>window.onresize = function(){ location.reload(); }
+</script>
+<script src="scripts/typing-effect.js"> </script>
+<script src="scripts/smooth-scroll.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="scripts/draggable-using-jquery-ui.js"></script>
+<!-- InstanceEnd --></html>

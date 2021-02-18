@@ -58,6 +58,8 @@
 <!-- TemplateEndEditable -->
 <footer>© Asad Khan</footer>
 </body>
+<script>window.onresize = function(){ location.reload(); }
+</script>
 <script src="scripts/typing-effect.js"> </script>
 <script src="../scripts/smooth-scroll.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
