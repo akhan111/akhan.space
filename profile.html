@@ -49,7 +49,7 @@
     </div>
     <div class="vertical">
         <!-- InstanceBeginEditable name="vertical-menu" -->
-        <a class="vertical-work <!--active-page-->" href="work.html">Work</a>
+        <a class="vertical-work <!--active-page-->" href="formal.html">Work</a>
         <a class="vertical-profile active-page" href="profile.html"> Profile</a>
         <a class="vertical-contact <!--active-page--> " href="contact.html">Contact</a>
         <!-- InstanceEndEditable -->
@@ -74,28 +74,35 @@ zoom: 4.5,
     <script>
 
     function rep() {
-        var x = document.getElementById("bio-formal");
-        if (x.style.display === "none") {
-          x.style.display = "block";
+        var x = document.getElementsByClassName("professional");
+        var i;
+for (i = 0; i < x.length; i++) {
+        if (x[i].style.display === "none") {
+          x[i].style.display = "block";
         } else {
-          x.style.display = "none";
+          x[i].style.display = "none";
         }
-        var x = document.getElementById("bio-informal");
-        if (x.style.display === "block") {
-          x.style.display = "none";
+    }
+        var x = document.getElementsByClassName("casual");
+        var i;
+for (i = 0; i < x.length; i++) {
+        if (x[i].style.display === "block") {
+          x[i].style.display = "none";
         } else {
-          x.style.display = "block";
+          x[i].style.display = "block";
         }
       }
+    }
     </script>
-    <div id="bio-formal">
+
+    <div class="professional">
     <p>Asad Khan is a designer that focuses on bridging the gap between humans and other animals. His work generally takes the form of conceptual zoo exhibit designs, but he occasionally works as a fine artist as well. No matter the media, his work consistently seeks to challenge power roles and to allow space for contemplation on the role of the human animal in the Anthropocene.</p>
 
 <p>Asad is from Houston and attends the Parsons New School of Design in New York City as an undergraduate. He is working towards a dual degree: a BFA in Integrated Design with an emphasis on Zoo Design and a BA in Liberal Arts with an emphasis on Anthropogeny. He plans to earn a Master of Architecture and a Master of Landscape Architecture in the future.</p>
 
 <p>Zoo Design has been Asad's passion since a very young age, as it has always presented a unique blend of his steady interests in biology, design, and business. He seeks to break away from the paradigms present in the field and to present new experiences that draw from other disciplines.</p>
     </div>
-    <div id="bio-informal">
+    <div class="casual">
         <p>I am a designer that focuses on bridging the gap between humans and other animals. My work generally takes the form of conceptual zoo exhibit designs, but I occasionally work as a fine artist as well. No matter the media, my work consistently seeks to challenge power roles and to allow space for contemplation on the role of the human animal in the Anthropocene.</p>
 
         <p>I am from Houston and attend the Parsons New School of Design in New York City as an undergraduate. I am working towards a dual degree: a BFA in Integrated Design with an emphasis on Zoo Design and a BA in Liberal Arts with an emphasis on Anthropogeny. I plan to earn a Master of Architecture and a Master of Landscape Architecture in the future.</p>
@@ -103,6 +110,8 @@ zoom: 4.5,
         <p>Zoo Design has been my passion since a very young age, as it has always presented a unique blend of my steady interests in biology, design, and business. I seek to break away from the paradigms present in the field and to present new experiences that draw from other disciplines.</p>
             </div>
     <div class="pin-widget">
+        <div class="casual">Track my Aesthetic</div>
+        <div class="professional">Track his Aesthetic</div>
   <div class="pinterest-feed-container">
     <div class="pinterest-feed wait">
     </div>

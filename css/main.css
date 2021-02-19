@@ -3,6 +3,13 @@
 * {
     transition: ease-in-out;
 }
+/* Professionalism Toggle */
+.professional {
+    display: block;
+}
+.casual {
+    display: none;
+}
 /*Preloader*/
 #loader {
     position: fixed;
@@ -120,14 +127,15 @@ a {
     letter-spacing: inherit;
     text-decoration: inherit;
 }
-a:hover {
-    color: #aee;
-    transition: 1s;
-}
 a:active {
     color: #feb;
     transition: 0s;
 }
+a:hover {
+    color: #aee !important;
+    transition: 1s;
+}
+
 footer {
     font-family: t26-carbon, monospace;
     font-weight: 400;
@@ -145,7 +153,7 @@ footer {
 html, body, span {
     cursor: url("../assets/cursors/banana.cur"), url("../assets/cursors/banana.png"), auto !important;
 }
-a, button, button:hover, audio:hover, #professionalism-toggle {
+a, button, button:hover, audio:hover, #professionalism-toggle, #link-cursor {
     cursor: url("../assets/cursors/banana-peeled.cur"), url("../assets/cursors/banana-peeled.png"), auto !important;
 }
 *:active {

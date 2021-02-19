@@ -54,6 +54,29 @@
     </div>
 </header>
 <!-- InstanceBeginEditable name="page-content" -->
+<script>
+
+    function rep() {
+        var x = document.getElementsByClassName("professional");
+        var i;
+for (i = 0; i < x.length; i++) {
+        if (x[i].style.display === "none") {
+          x[i].style.display = "block";
+        } else {
+          x[i].style.display = "none";
+        }
+    }
+        var x = document.getElementsByClassName("casual");
+        var i;
+for (i = 0; i < x.length; i++) {
+        if (x[i].style.display === "block") {
+          x[i].style.display = "none";
+        } else {
+          x[i].style.display = "block";
+        }
+      }
+    }
+    </script>
 <div id="timeline">
     <a href="#anchor-2021" id="timeline-2021">2021</a>
     <a href="#anchor-2020" id="timeline-2020">2020</a>
@@ -83,7 +106,9 @@
         <h1>The Great Ape</h1>
         <h2>Acrylic on Canvas<br>
             82" x 48", 2017</h2>
-        <p>Inspired by Desmond Morris's book <i>The Naked Ape</i>, I chose to depict one of my favorite humans ‒ myself ‒ in all his natural glory (and then some). This painting was my "Legacy Piece," the final painting I made during my time at the High School for Performing and Visual Arts in Houston, where the work is on permanent display.</p>
+        <p class="casual">Inspired by Desmond Morris's book <i>The Naked Ape</i>, I chose to depict one of my favorite humans ‒ myself ‒ in all his natural glory (and then some). This painting was my "Legacy Piece," the final painting I made during my time at the High School for Performing and Visual Arts in Houston, where the work is on permanent display.</p>
+        <p class="professional">Inspired by Desmond Morris's book <i>The Naked Ape</i>, the artist chose to depict one of his favorite humans ‒ himself ‒ in all his natural glory (and then some). This painting was his "Legacy Piece," the final painting he made during his time at the High School for Performing and Visual Arts in Houston, where the work is on permanent display.</p>
+
     </div>
     </a>
     <a class="formal-container" href="/assets/formal/creationism-and-communism.png" target="_blank">
