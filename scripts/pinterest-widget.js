@@ -37,7 +37,7 @@ var userLink = userinfo.profile_url;
   
 $pinProfile.html('<div class="pin-user-profile-image"><img src="'+ profileImg +'" alt="Pinterest Profile Image"></div><div class="pin-user-details"><span class="pin-user-name">'+ displayName +'</span><span class="pin-user-bio">'+ userBio +'</span></div>'); 
 
-$pinLink.html('<a href="'+ userLink +'" rel="nofollow" target="_blank"><i class="fab fa-pinterest" style="display:inline-block; margin-right:5px; font-size:20px; line-height:20px; vertical-align:text-top;""></i><span id="link-cursor" style="display:inline-block; line-height:20px; font-weight: 400; font-size:1rem; vertical-align:text-top;">@'+ pinUser +' on Pinterest</span></a>');  
+// $pinLink.html('<a href="'+ userLink +'" rel="nofollow" target="_blank"><i class="fab fa-pinterest" style="display:inline-block; margin-right:5px; font-size:20px; line-height:20px; vertical-align:text-top;""></i><span id="link-cursor" style="display:inline-block; line-height:20px; font-weight: 400; font-size:1rem; vertical-align:text-top;">@'+ pinUser +' on Pinterest</span></a>');  
   
 $pinFeed.html(html);
 }).fail(function() {

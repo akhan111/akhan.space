@@ -4,7 +4,6 @@
   transition: ease-in-out;
 }
 /* Professionalism Toggle */
-
 .casual.hidden {
   display: none;
 }
@@ -58,6 +57,7 @@ header {
 .asadkhan {
   padding-left: 87px;
   display: inline;
+  z-index: 2;
 }
 .current-page {
   color: #feb;
@@ -65,7 +65,7 @@ header {
   right: 87px;
   position: fixed;
   top: 36px;
-  text-align: center;
+  text-align: right;
   width: 100%;
 }
 @media (max-width: 1200px) {
@@ -81,6 +81,7 @@ header {
     left: auto;
     right: auto;
     line-height: 1rem;
+    text-align: center;
   }
 }
 .vertical {
@@ -128,15 +129,18 @@ a {
   letter-spacing: inherit;
   text-decoration: inherit;
 }
-a:active {
-  color: #feb;
-  transition: 0s;
-}
 a:hover {
   color: #aee !important;
   transition: 1s;
 }
-
+a:active {
+  color: #feb !important;
+  transition: 0s;
+}
+.section-title{
+  padding-bottom: 15px;
+  text-align: center;
+}
 footer {
   font-family: t26-carbon, monospace;
   font-weight: 400;

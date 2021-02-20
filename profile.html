@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
-  <head>
-    <script src="scripts/gif-preloader.js"></script>
-    <meta charset="utf-8" />
-    <!-- InstanceBeginEditable name="doctitle" -->
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<script src="scripts/gif-preloader.js"></script>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
     <title>Profile</title>
     <link href="css/profile.css" rel="stylesheet" type="text/css" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
@@ -13,31 +12,31 @@
       rel="stylesheet"
     />
     <!-- InstanceEndEditable -->
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.typekit.net/rau6scb.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <!-- InstanceBeginEditable name="head" -->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/rau6scb.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<!-- InstanceBeginEditable name="head" -->
     <div></div>
     <!-- InstanceEndEditable -->
-  </head>
-  <body>
-    <div id="top"></div>
-    <div id="loader"></div>
-    <header>
-      <a class="asadkhan" href="/index.html">Asad Khan</a>
-      <!-- InstanceBeginEditable name="current-page" -->
+</head>
+<body>
+<div id="top"></div>
+<div id="loader"></div>
+<header>
+    <a class="asadkhan" href="/index.html">Asad Khan</a>
+    <!-- InstanceBeginEditable name="current-page" -->
       <a class="current-page" href="#top">Profile</a>
       <!-- InstanceEndEditable -->
-      <div class="nav" onclick="this.classList.toggle('active')">
-        <a class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+    <div class="nav" onclick="this.classList.toggle('active')">
+        <a  class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
         </a>
         <div id="dropdown">
-          <ul class="nav-menu">
-            <!-- InstanceBeginEditable name="dropdown-menu" -->
+            <ul class="nav-menu">
+                <!-- InstanceBeginEditable name="dropdown-menu" -->
             <li class="menu-item dropdown-work">
               <a class="<!--active-page-->" href="work.html">Work</a>
             </li>
@@ -48,10 +47,10 @@
               <a class="<!--active-page-->" href="contact.html">Contact</a>
             </li>
             <!-- InstanceEndEditable -->
-          </ul>
+            </ul>
         </div>
-      </div>
-      <div class="vertical">
+    </div>
+    <div class="vertical">
         <!-- InstanceBeginEditable name="vertical-menu" -->
         <a class="vertical-work <!--active-page-->" href="formal.html">Work</a>
         <a class="vertical-profile active-page" href="profile.html"> Profile</a>
@@ -59,23 +58,23 @@
           >Contact</a
         >
         <!-- InstanceEndEditable -->
-      </div>
-    </header>
-    <!-- InstanceBeginEditable name="page-content" -->
+    </div>
+</header>
+<!-- InstanceBeginEditable name="page-content" -->
     <div id="content">
-      <div id="map" style="width: 100%; height: 200px; z-index: 0"></div>
+      <div id="map-container">
+      <div id="map" style="width: 100%; height: 265px; z-index: 0"></div>
       <script>
         mapboxgl.accessToken =
           'pk.eyJ1IjoiYWtoYW5zcGFjZSIsImEiOiJjamJlcDkyNzAweHJ1Mnlxd2lrbjJ5a3EyIn0.3Qa090Nqxb0zvbdDf56Vtg';
         var map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/akhanspace/cjbeq0r0x9aar2rojqfs555wn',
-          center: [-95.46046, 29],
+          center: [-95.46046, 29.7],
           zoom: 4.5,
         });
       </script>
-
-      <div id="map-footer"></div>
+</div>
       <input id="professionalism-toggle" type="checkbox" onclick="rep()" />
 
       <div class="professional">
@@ -131,64 +130,30 @@
           disciplines.
         </p>
       </div>
+      <img id="selfie" src="assets/profile/IMG_2348.png">
       <div class="pin-widget">
-        <div class="casual hidden">Track my Aesthetic</div>
-        <div class="professional">Track his Aesthetic</div>
+        <div class="typewrite section-title" data-period="99999" data-type='["Visual Inspiration "]'>
+          <span class="wrap"></span>
+        </div>
         <div class="pinterest-feed-container">
           <div class="pinterest-feed wait"></div>
         </div>
-        <a class="pinterest-link"> </a>
+        <a href="https://www.pinterest.com/khanimalia/" class="pinterest-link casual hidden" target="_blank"> Track my aesthetic on Pinterest @khanimalia</a>
+        <a href="https://www.pinterest.com/khanimalia/" class="pinterest-link professional" target="_blank"> Track his aesthetic on Pinterest @khanimalia</a>
       </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="scripts/pinterest-widget.js"></script>
     <!-- InstanceEndEditable -->
-    <footer>© Asad Khan</footer>
-  </body>
-  <script>
-    window.onresize = function () {
-      location.reload();
-    };
-  </script>
-  <script src="scripts/typing-effect.js"></script>
-  <script src="scripts/smooth-scroll.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="scripts/draggable-using-jquery-ui.js"></script>
-  <script>
-    //  Get choice from local storage
-    let currentChoice = localStorage.getItem('professionalism');
-
-    function rep(firstCall) {
-      const professional = document.querySelectorAll('.professional');
-      const casual = document.querySelectorAll('.casual');
-
-      for (let i = 0; i < professional.length; i++) {
-        // If the function is running without a click and we are trying to determine user choice from local storage
-        if (firstCall) {
-          if (currentChoice === 'professional' || !currentChoice) {
-            break;
-          } else if (currentChoice === 'casual') {
-            professional[i].classList.add('hidden');
-            casual[i].classList.remove('hidden');
-          }
-        } else {
-          professional[i].classList.toggle('hidden');
-          casual[i].classList.toggle('hidden');
-
-          if (i === professional.length - 1) {
-            if (currentChoice === 'professional' || !currentChoice) {
-              currentChoice = 'casual';
-              localStorage.setItem('professionalism', currentChoice);
-            } else if (currentChoice === 'casual') {
-              currentChoice = 'professional';
-              localStorage.setItem('professionalism', currentChoice);
-            }
-          }
-        }
-      }
-    }
-    rep(true);
-  </script>
-  <!-- InstanceEnd -->
-</html>
+<footer>© Asad Khan</footer>
+</body>
+<script>window.onresize = function(){ location.reload(); }
+</script>
+<script src="scripts/typing-effect.js"> </script>
+<script src="scripts/smooth-scroll.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="scripts/draggable-using-jquery-ui.js"></script>
+<script src="scripts/professionalism-toggle.js"></script>
+<!-- InstanceEnd --></html>
