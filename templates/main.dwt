@@ -11,7 +11,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <!-- TemplateBeginEditable name="head" -->
-<div></div>
+<script src="scripts/typing-effect.js"> </script>
 <!-- TemplateEndEditable -->
 </head>
 <body>
@@ -60,7 +60,6 @@
 </body>
 <script>window.onresize = function(){ location.reload(); }
 </script>
-<script src="scripts/typing-effect.js"> </script>
 <script src="../scripts/smooth-scroll.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="scripts/draggable-using-jquery-ui.js"></script>

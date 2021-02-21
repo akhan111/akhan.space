@@ -4,14 +4,16 @@
 <script src="scripts/gif-preloader.js"></script>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>AKhan.Space</title>
+<title>Contact</title>
+<link href="css/contact.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/theaterjs/latest/theater.min.js"></script>
+<script src="scripts/humanity-assessment.js"></script>
 <!-- InstanceEndEditable -->
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://use.typekit.net/rau6scb.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <!-- InstanceBeginEditable name="head" -->
-<link href="css/index.css" rel="stylesheet" type="text/css">
 <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -20,7 +22,7 @@
 <header>
     <a class="asadkhan" href="/index.html">Asad Khan</a>
     <!-- InstanceBeginEditable name="current-page" -->
-    <a class="current-page" href="#top">AKhan.Space</a>
+    <a class="current-page" href="#top">Contact</a>
     <!-- InstanceEndEditable -->
     <div class="nav" onclick="this.classList.toggle('active')">
         <a  class="hamburger">
@@ -32,13 +34,13 @@
             <ul class="nav-menu">
                 <!-- InstanceBeginEditable name="dropdown-menu" -->
                 <li class="menu-item dropdown-work">
-                    <a class="<!--active-page-->" href="/work.html">Work</a>
+                    <a class="<!--active-page-->" href="work.html">Work</a>
                 </li>
                 <li class="menu-item dropdown-profile">
-                    <a class="<!--active-page-->" href="/profile.html">Profile</a>
+                    <a class="<!--active-page-->" href="profile.html">Profile</a>
                 </li>
                 <li class="menu-item dropdown-contact">
-                    <a class="<!--active-page-->" href="/contact.html">Contact</a>
+                    <a class="active-page" href="contact.html">Contact</a>
                 </li>
                 <!-- InstanceEndEditable -->
             </ul>
@@ -46,35 +48,41 @@
     </div>
     <div class="vertical">
         <!-- InstanceBeginEditable name="vertical-menu" -->
-        <a class="vertical-work <!--active-page-->" href="/work.html">Work</a>
-        <a class="vertical-profile <!--active-page-->" href="/profile.html"> Profile</a>
-        <a class="vertical-contact <!--active-page--> " href="/contact.html">Contact</a>
+        <a class="vertical-work <!--active-page-->" href="work.html">Work</a>
+        <a class="vertical-profile <!--active-page-->" href="profile.html"> Profile</a>
+        <a class="vertical-contact active-page " href="contact.html">Contact</a>
         <!-- InstanceEndEditable -->
     </div>
 </header>
 <!-- InstanceBeginEditable name="page-content" -->
-<video playsinline autoplay muted loop poster="assets/index/cactus-fountain.jpg" id="full-cover-bg">
-    <source src="assets/index/cactus-fountain.webm" type="video/webm">
-    <source src="assets/index/cactus-fountain.mp4" type="video/mp4">
-</video>
-<p class="typewrite glitch-effect cactus-centered" data-period="99999" data-type='["Welcome. "]'>
-    <span class="wrap"></span>
-</p>
-<!--TESTING CARET ANIMATIONS
-    <p class="typewrite glitch-effect" data-period="99999" data-type='["Welcome.. "]'>
-      <span class="wrap"></span>
-    </p>
-    <p class="typewrite glitch-effect" data-period="99999" data-type='["Welcome. "]'>
-      <span class="wrap"></span>
-    </p>
-    <p class="typewrite glitch-effect" data-period="99999" data-type='["Welcome... "]'>
-      <span class="wrap"></span>
-    </p>
-    <p class="typewrite glitch-effect" data-period="99999" data-type='["Welcome "]'>
-      <span class="wrap"></span>
-    </p>
--->
+<div id="content">
 
+    <form action="#">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name">
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email">
+    
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject">
+          <option value="conversation">Conversation</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="commission">Commission</option>
+        </select>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter Message" style="height:100px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+      <p id="asad"></p>
+      <button type="submit">Submit</button>
+
+
+</div>
 <!-- InstanceEndEditable -->
 <footer>© Asad Khan</footer>
 </body>

@@ -1,0 +1,114 @@
+@charset "utf-8";
+#content {
+    width: 450px;
+    height: 100%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    /* top: 15vh; */
+}
+form{
+    position: absolute;
+    top: 100%;
+    transform: translateY(50%);
+  
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea, option {
+    width: 100%; /* Full width */
+    padding: 5px 10px 5px 10px; /* Some padding */ 
+    background-color: #7f7f7f;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 1px; 
+    margin-bottom: 10px;
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    caret-color: #fbc;
+    color: #fbc;
+    font-family: t26-carbon, monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    font-size: 1rem;
+    letter-spacing: normal;
+    border: solid 2px;
+    border-color: #fbc; 
+    border-radius: 0px 15px;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#fbc;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fbc;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color:#fbc;
+  }
+  label {
+      font-size: .8rem;
+      letter-spacing: .5rem;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;       /* Remove default arrow */
+    background-image: url(...);   /* Add custom arrow */
+ }
+ select::-ms-expand {
+    display: none; /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
+}
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer !important;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+
+  #asad {
+    position: relative;
+    left: 33%;
+  }
+  button {
+  font-family: industry, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+    position: relative;
+    left: 33%;
+    color: #fbc;
+    background-color: transparent;
+    border: solid #fbc;
+    border-radius: 25px;
+    outline:none;
+    padding: .5rem;
+      text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing:.8rem;
+     text-indent: 0.8rem;
+  }
+  button:hover {
+    color: #aee;
+    background-color: #7f7f7f;
+    border: solid #aee;
+    transition: 1s;
+  
+  }
+  button:active {
+    color: #feb;
+    background-color: transparent;
+    border: solid #feb;
+    transition: 0s;
+  }
+  
