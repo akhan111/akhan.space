@@ -14,7 +14,7 @@
 #loader {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 106vh;
   margin-top: -70px !important;
   z-index: 99999;
   overflow: visible;

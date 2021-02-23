@@ -56,32 +56,68 @@
 </header>
 <!-- InstanceBeginEditable name="page-content" -->
 <div id="content">
-
-    <form action="#">
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter Name">
     
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter Email">
-    
-        <label for="subject">Subject:</label>
-        <select id="subject" name="subject">
-          <option value="conversation">Conversation</option>
-          <option value="collaboration">Collaboration</option>
-          <option value="commission">Commission</option>
-        </select>
-    
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter Message" style="height:100px"></textarea>
-    
-        <input type="submit" value="Submit">
-    
-      </form>
+    <div class="fcf-form-wrap">
+        <div id="fcf-form">
+            <form class="fcf-form-class" method="post" action="http://akhan.space/fcf/fcf-assets/fcf.process.php" novalidate="novalidate">
+            <input type="hidden" id="recaptcha-sitekey" value="6LdiGUwaAAAAAFvNbuO3PTWBRIos_aLPsIzfJ8cE">
+        <div class="field">
+            <label for="Name" class="label has-text-weight-normal">Name</label>
+            <div class="control">
+                <input type="text" name="Name" id="Name" class="input is-full-width" placeholder="Enter name" maxlength="100" data-validate-field="Name">
+            </div>
+        </div>
+        <div class="field">
+            <label for="Email" class="label has-text-weight-normal">Email</label>
+            <div class="control">
+                <input type="email" name="Email" id="Email" class="input is-full-width" placeholder="Enter email" maxlength="100" data-validate-field="Email">
+            </div>
+        </div>
+        <div class="field">
+            <legend class="label has-text-weight-normal">Subject</legend>
+            <div class="control">
+                <span>
+        <label for="subject-1">
+            <input type="radio" name="subject" id="subject-1" value="conversation" data-validate-field="subject">
+            Conversation
+        </label>
+        </span>
+        <span>
+        <label for="subject-2">
+            <input type="radio" name="subject" id="subject-2" value="collaboration" data-validate-field="subject">
+            Collaboration
+        </label>
+        </span>
+        <span>
+        <label for="subject-3">
+            <input type="radio" name="subject" id="subject-3" value="commission" data-validate-field="subject">
+            Commission
+        </label>
+        </span>
+        
+            </div>
+        </div>
+        <div class="field">
+            <label for="message" class="label has-text-weight-normal">Message</label>
+            <div class="control">
+            <textarea name="message" id="message" class="textarea" placeholder="Enter message" data-validate-field="message"></textarea>
+            </div>
+        </div>
+        <p id="asad"></p>
+        <div id="fcf-status" class="fcf-status"></div>
+        <div class="field">
+            <div class="buttons">
+            <button id="fcf-button" type="submit" class="button is-link is-medium">Submit</button>
+            </div>
+        </div>
+        <script type="text/javascript" async="" src="./fcf.form_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-81AvY0eD0WRfrSCrRsFkP0r0iO3o5hOgAYEmixw/wrZown4qSgSmwPEXEBsQcT7t"></script><script src="./fcf.form_files/api.js.download" async="" defer=""></script>
+                <script src="./fcf.form_files/fcf.just-validate.min.js.download"></script>
+                <script src="./fcf.form_files/fcf.form.js.download"></script>
+        
+        <div>
+            <div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe src="./fcf.form_files/anchor.html" width="256" height="60" role="presentation" name="a-qqna2r2t1984" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./fcf.form_files/saved_resource.html"></iframe>
+    </div>
       <p id="asad"></p>
-      <button type="submit">Submit</button>
-
-
 </div>
 <!-- InstanceEndEditable -->
 <footer>© Asad Khan</footer>

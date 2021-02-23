@@ -51,4 +51,6 @@ document.querySelector("button").addEventListener(
   },
   false
 )
+return true
+
 };
